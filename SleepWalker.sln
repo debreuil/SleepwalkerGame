@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepWalker", "SleepWalker\SleepWalker.csproj", "{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SleepWalkerContent", "SleepWalker\Content\SleepWalkerContent.contentproj", "{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V2DRuntime", "..\SWF2XNA\V2DRuntime\V2DRuntime.csproj", "{269A1048-DA2C-475A-9C10-564A7D8A071D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Box2D.XNA - windows", "..\SWF2XNA\Box2D.XNA\Box2D.XNA - windows.csproj", "{22791486-E721-4511-AA4B-DA26CF5D0F2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Debug|Xbox 360 = Debug|Xbox 360
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+		Release|Xbox 360 = Release|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Debug|x86.ActiveCfg = Debug|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Debug|x86.Build.0 = Debug|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Release|x86.ActiveCfg = Release|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Release|x86.Build.0 = Release|x86
+		{9AFAC3C3-BE70-4EB3-BC75-F5C3339D0E9C}.Release|Xbox 360.ActiveCfg = Release|x86
+		{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}.Debug|x86.ActiveCfg = Debug|x86
+		{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}.Release|x86.ActiveCfg = Release|x86
+		{62768031-4BDD-4B74-B9DC-91C0E23D7ADB}.Release|Xbox 360.ActiveCfg = Release|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Debug|x86.ActiveCfg = Debug|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Debug|x86.Build.0 = Debug|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Release|x86.ActiveCfg = Release|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Release|x86.Build.0 = Release|x86
+		{269A1048-DA2C-475A-9C10-564A7D8A071D}.Release|Xbox 360.ActiveCfg = Release|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Debug|x86.ActiveCfg = Debug|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Debug|x86.Build.0 = Debug|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Debug|Xbox 360.ActiveCfg = Debug|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Release|x86.ActiveCfg = Release|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Release|x86.Build.0 = Release|x86
+		{22791486-E721-4511-AA4B-DA26CF5D0F2E}.Release|Xbox 360.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,113 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using DDW.Display;
+using DDW.V2D;
+using Smuck.Components;
+using V2DRuntime.Attributes;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework;
+
+namespace Swf2XNA.Screens
+{
+    public delegate void ContactDelegate(object objA, object objB);
+
+    public class BaseScreen : V2DScreen
+    {
+        public Sprite bkg;
+
+        protected bool levelOver = false;
+
+        [V2DSpriteAttribute(isStatic = true)]
+        public V2DSprite[] beam;
+
+        [V2DSpriteAttribute(isStatic = true, isSensor = true)]
+        public WinTarget target;
+
+        [V2DSpriteAttribute(restitution = .1f, friction = .1f, fixedRotation = true)]
+        public Walker walker;
+
+        Camera Camera;
+        bool followPlayer = false;
+
+        public BaseScreen(V2DContent v2dContent) : base(v2dContent)
+        {
+        }
+        public BaseScreen(SymbolImport si)  : base(si)
+        {
+            SymbolImport = si;
+        }
+
+        public override void Initialize()
+        {
+            Camera = new Camera(screen.ClientSize);
+
+            base.Initialize();
+        }
+
+        public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
+        {
+            // Camera logic
+            if (followPlayer)
+            {
+                Camera.Translation = walker.Position;
+            }
+            else
+            {
+                Camera.Translation = new Vector2(1280F, 720F) / 2F;
+            }
+
+            //Camera.Zoom = 1.5F;
+            Camera.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
+            
+            // Keys
+			KeyboardState ks = Keyboard.GetState();
+            if (ks.IsKeyDown(Keys.Q))
+            {
+                Camera.Shake(1);
+            }
+				
+            base.Update(gameTime);
+        }
+
+        public override void PostSolve(Box2D.XNA.Contact contact, ref Box2D.XNA.ContactImpulse impulse)
+        {
+            float intensity = impulse.normalImpulses[0] / 2000F;
+            if (intensity > 0.25F)
+            {
+                Camera.Shake(intensity);
+            }
+            base.PostSolve(contact, ref impulse);
+        }
+
+        public override bool OnPlayerInput(int playerIndex, DDW.Input.Move move, System.TimeSpan time)
+        {
+            bool result = base.OnPlayerInput(playerIndex, move, time);
+
+            if (result && move.Releases == Buttons.Y)
+            {
+                DestroyView();
+                stage.SetScreen(this.instanceName);
+            }
+            else if (result && move.Releases == Buttons.X)
+            {
+                DestroyView();
+                stage.NextScreen();
+            }
+            return false;
+        }
+
+        public override void OnUpdateComplete(Microsoft.Xna.Framework.GameTime gameTime)
+        {
+            base.OnUpdateComplete(gameTime);
+
+            if (levelOver)
+            {
+                levelOver = false;
+                DestroyView();
+                stage.NextScreen();
+            }
+        }
+    }
+}

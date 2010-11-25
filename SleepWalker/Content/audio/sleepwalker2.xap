@@ -1,0 +1,1931 @@
+Signature = XACT3;
+Version = 18;
+Content Version = 46;
+Release = February 2010;
+
+Options
+{
+    Verbose Report = 1;
+    Generate C/C++ Headers = 1;
+}
+
+Global Settings
+{
+    Xbox File = Xbox\sleepwalker2.xgs;
+    Windows File = Win\sleepwalker2.xgs;
+    Header File = test_sleepwalker2.h;
+    Exclude Category Names = 0;
+    Exclude Variable Names = 0;
+    Last Modified Low = 1040625268;
+    Last Modified High = 30116915;
+
+    Category
+    {
+        Name = Global;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Default;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Music;
+        Public = 1;
+        Background Music = 1;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = drums;
+        Public = 1;
+        Background Music = 1;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = bass;
+        Public = 1;
+        Background Music = 1;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Variable
+    {
+        Name = OrientationAngle;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = -180.000000;
+        Max = 180.000000;
+    }
+
+    Variable
+    {
+        Name = DopplerPitchScalar;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 1.000000;
+        Initial Value = 1.000000;
+        Min = 0.000000;
+        Max = 4.000000;
+    }
+
+    Variable
+    {
+        Name = SpeedOfSound;
+        Public = 1;
+        Global = 1;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 343.500000;
+        Initial Value = 343.500000;
+        Min = 0.000000;
+        Max = 1000000.000000;
+    }
+
+    Variable
+    {
+        Name = ReleaseTime;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 1;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 15000.000000;
+    }
+
+    Variable
+    {
+        Name = AttackTime;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 1;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 15000.000000;
+    }
+
+    Variable
+    {
+        Name = NumCueInstances;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 1024.000000;
+    }
+
+    Variable
+    {
+        Name = Distance;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 1000000.000000;
+    }
+
+    Compression Preset
+    {
+        Name = looping;
+        Xbox Format Tag = 357;
+        Target Sample Rate = 48000;
+        XMA Quality = 60;
+        Find Best Quality = 0;
+        High Freq Cut = 0;
+        Loop = 0;
+        PC Format Tag = 2;
+        Samples Per Block = 128;
+    }
+}
+
+Wave Bank
+{
+    Name = MusicWaveBank;
+    Xbox File = Xbox\MusicWaveBank.xwb;
+    Windows File = Win\MusicWaveBank.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = <none>;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 1284420850;
+    PC Bank Last Modified High = 30116914;
+    Header Last Modified Low = 0;
+    Header Last Modified High = 0;
+    Bank Last Revised Low = 2386304854;
+    Bank Last Revised High = 30082726;
+
+    Wave
+    {
+        Name = CountryBassA-017;
+        File = sleepwalker2\CountryBassA-017.wav;
+        Build Settings Last Modified Low = 681183036;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1182451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassA-018;
+        File = sleepwalker2\CountryBassA-018.wav;
+        Build Settings Last Modified Low = 681183036;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1262451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassA-020;
+        File = sleepwalker2\CountryBassA-020.wav;
+        Build Settings Last Modified Low = 681183036;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 350174;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1322451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBrushDrum005;
+        File = sleepwalker2\CountryBrushDrum005.wav;
+        Build Settings Last Modified Low = 681183036;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 347428;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1642451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBrushDrum006;
+        File = sleepwalker2\CountryBrushDrum006.wav;
+        Build Settings Last Modified Low = 681183036;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 350172;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1722451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBrushDrum007;
+        File = sleepwalker2\CountryBrushDrum007.wav;
+        Build Settings Last Modified Low = 681339286;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 350144;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1782451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBrushDrum034;
+        File = sleepwalker2\CountryBrushDrum034.wav;
+        Build Settings Last Modified Low = 681339286;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 349444;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1842451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassA-001;
+        File = sleepwalker2\CountryBassA-001.wav;
+        Build Settings Last Modified Low = 681339286;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175080;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 742451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassA-002;
+        File = sleepwalker2\CountryBassA-002.wav;
+        Build Settings Last Modified Low = 681339286;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175092;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1062451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassA-003;
+        File = sleepwalker2\CountryBassA-003.wav;
+        Build Settings Last Modified Low = 681339286;
+        Build Settings Last Modified High = 30082184;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175088;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1122451200;
+            Last Modified High = 30082175;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-012;
+        File = sleepwalker2\CountryBassD-012.wav;
+        Build Settings Last Modified Low = 147520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 174272;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1666444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-013;
+        File = sleepwalker2\CountryBassD-013.wav;
+        Build Settings Last Modified Low = 147520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1726444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-021;
+        File = sleepwalker2\CountryBassD-021.wav;
+        Build Settings Last Modified Low = 147520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175088;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2006444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-027;
+        File = sleepwalker2\CountryBassD-027.wav;
+        Build Settings Last Modified Low = 147520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2086444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-029;
+        File = sleepwalker2\CountryBassD-029.wav;
+        Build Settings Last Modified Low = 147676636;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175088;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2186444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-002;
+        File = sleepwalker2\CountryBassD-002.wav;
+        Build Settings Last Modified Low = 147676636;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1406444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassD-006;
+        File = sleepwalker2\CountryBassD-006.wav;
+        Build Settings Last Modified Low = 147676636;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175088;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1586444800;
+            Last Modified High = 30082450;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-015;
+        File = sleepwalker2\CountryBassE-015.wav;
+        Build Settings Last Modified Low = 3872364136;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 350174;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1651477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-024;
+        File = sleepwalker2\CountryBassE-024.wav;
+        Build Settings Last Modified Low = 3872364136;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175076;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 987614720;
+            Last Modified High = 30082180;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-027;
+        File = sleepwalker2\CountryBassE-027.wav;
+        Build Settings Last Modified Low = 3872364136;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1711477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-029;
+        File = sleepwalker2\CountryBassE-029.wav;
+        Build Settings Last Modified Low = 3872364136;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1771477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-030;
+        File = sleepwalker2\CountryBassE-030.wav;
+        Build Settings Last Modified Low = 3872364136;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1831477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-002;
+        File = sleepwalker2\CountryBassE-002.wav;
+        Build Settings Last Modified Low = 3872520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175094;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1371477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-003;
+        File = sleepwalker2\CountryBassE-003.wav;
+        Build Settings Last Modified Low = 3872520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 350172;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1431477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-004;
+        File = sleepwalker2\CountryBassE-004.wav;
+        Build Settings Last Modified Low = 3872520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175074;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1491477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = CountryBassE-005;
+        File = sleepwalker2\CountryBassE-005.wav;
+        Build Settings Last Modified Low = 3872520386;
+        Build Settings Last Modified High = 30082459;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 175086;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1571477504;
+            Last Modified High = 30082451;
+        }
+    }
+
+    Wave
+    {
+        Name = choir_snore;
+        File = sleepwalker2\choir_snore.wav;
+        Build Settings Last Modified Low = 2484962248;
+        Build Settings Last Modified High = 30082462;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 1068172;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3421542912;
+            Last Modified High = 30082453;
+        }
+    }
+
+    Wave
+    {
+        Name = 8RX00143;
+        File = sleepwalker2\8RX00143.wav;
+        Build Settings Last Modified Low = 3114213702;
+        Build Settings Last Modified High = 30082463;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 3571664;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 810711296;
+            Last Modified High = 29245374;
+        }
+    }
+
+    Wave
+    {
+        Name = 8RX00005;
+        File = sleepwalker2\8RX00005.wav;
+        Build Settings Last Modified Low = 3114369952;
+        Build Settings Last Modified High = 30082463;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 2344900;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 810711296;
+            Last Modified High = 29245374;
+        }
+    }
+
+    Wave
+    {
+        Name = 8RX00066;
+        File = sleepwalker2\8RX00066.wav;
+        Build Settings Last Modified Low = 3114369952;
+        Build Settings Last Modified High = 30082463;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 860024;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 810711296;
+            Last Modified High = 29245374;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF7;
+        File = sleepwalker2\BACKF7.WAV;
+        Build Settings Last Modified Low = 737502222;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1710674944;
+            Last Modified High = 30076311;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF1;
+        File = sleepwalker2\BACKF1.WAV;
+        Build Settings Last Modified Low = 737502222;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1245249792;
+            Last Modified High = 30076298;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF2;
+        File = sleepwalker2\BACKF2.WAV;
+        Build Settings Last Modified Low = 737502222;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1330282496;
+            Last Modified High = 30076299;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF3;
+        File = sleepwalker2\BACKF3.WAV;
+        Build Settings Last Modified Low = 737502222;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 705511424;
+            Last Modified High = 30076306;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF4;
+        File = sleepwalker2\BACKF4.WAV;
+        Build Settings Last Modified Low = 737502222;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 950674944;
+            Last Modified High = 30076311;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF5;
+        File = sleepwalker2\BACKF5.WAV;
+        Build Settings Last Modified Low = 737658472;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 950674944;
+            Last Modified High = 30076311;
+        }
+    }
+
+    Wave
+    {
+        Name = BACKF6;
+        File = sleepwalker2\BACKF6.WAV;
+        Build Settings Last Modified Low = 737658472;
+        Build Settings Last Modified High = 30082468;
+        Compression Preset Name = looping;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 651324;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2100609536;
+            Last Modified High = 30076309;
+        }
+    }
+
+    Wave
+    {
+        Name = loopSilence2sec;
+        File = sleepwalker2\loopSilence2sec.wav;
+        Build Settings Last Modified Low = 2373165314;
+        Build Settings Last Modified High = 30082716;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 176400;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2144727814;
+            Last Modified High = 30082716;
+        }
+    }
+}
+
+Sound Bank
+{
+    Name = MusicSoundBank;
+    Xbox File = Xbox\MusicSoundBank.xsb;
+    Windows File = Win\MusicSoundBank.xsb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Bank Last Modified Low = 1040665270;
+    Bank Last Modified High = 30116915;
+    Header Last Modified High = 0;
+    Header Last Modified Low = 0;
+
+    Sound
+    {
+        Name = choir_sleep;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = choir_snore;
+                    Entry Index = 26;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = ambient;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Variation
+                {
+                    Variation Type = 3;
+                    Variation Table Type = 0;
+                    New Variation on Loop = 1;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = 8RX00143;
+                    Entry Index = 27;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = 8RX00005;
+                    Entry Index = 28;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = 8RX00066;
+                    Entry Index = 29;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = menu;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Variation
+                {
+                    Variation Type = 3;
+                    Variation Table Type = 0;
+                    New Variation on Loop = 1;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF7;
+                    Entry Index = 30;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF1;
+                    Entry Index = 31;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF2;
+                    Entry Index = 32;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF3;
+                    Entry Index = 33;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF4;
+                    Entry Index = 34;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF5;
+                    Entry Index = 35;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = BACKF6;
+                    Entry Index = 36;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = drumSound;
+        Volume = -2730;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Default;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Variation
+                {
+                    Variation Type = 3;
+                    Variation Table Type = 0;
+                    New Variation on Loop = 1;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBrushDrum005;
+                    Entry Index = 3;
+                    Weight = 200;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBrushDrum006;
+                    Entry Index = 4;
+                    Weight = 200;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBrushDrum007;
+                    Entry Index = 5;
+                    Weight = 200;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBrushDrum034;
+                    Entry Index = 6;
+                    Weight = 200;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = loopSilence2sec;
+                    Entry Index = 37;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = bassSound;
+        Volume = -2030;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Default;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Variation
+                {
+                    Variation Type = 3;
+                    Variation Table Type = 0;
+                    New Variation on Loop = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassA-001;
+                    Entry Index = 7;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassA-002;
+                    Entry Index = 8;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassA-003;
+                    Entry Index = 9;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassA-017;
+                    Entry Index = 0;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassA-018;
+                    Entry Index = 1;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassA-020;
+                    Entry Index = 2;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-002;
+                    Entry Index = 15;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-006;
+                    Entry Index = 16;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-012;
+                    Entry Index = 10;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-013;
+                    Entry Index = 11;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-021;
+                    Entry Index = 12;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-027;
+                    Entry Index = 13;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassD-029;
+                    Entry Index = 14;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-002;
+                    Entry Index = 22;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-003;
+                    Entry Index = 23;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-004;
+                    Entry Index = 24;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-005;
+                    Entry Index = 25;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-015;
+                    Entry Index = 17;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-024;
+                    Entry Index = 18;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-027;
+                    Entry Index = 19;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-029;
+                    Entry Index = 20;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = CountryBassE-030;
+                    Entry Index = 21;
+                    Weight = 100;
+                    Weight Min = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = MusicWaveBank;
+                    Bank Index = 0;
+                    Entry Name = loopSilence2sec;
+                    Entry Index = 37;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = sleep;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = choir_sleep;
+            Index = 0;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = ambient;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = ambient;
+            Index = 1;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = menu;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = menu;
+            Index = 2;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = bass;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = bassSound;
+            Index = 4;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = drums;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = drumSound;
+            Index = 3;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+}

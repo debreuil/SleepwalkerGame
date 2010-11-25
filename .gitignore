@@ -1,0 +1,19 @@
+$ cat .gitignore
+
+# Can ignore specific files
+.DS_Store
+Thumbs.db
+
+# Use wildcards as well
+*~
+*.swp
+
+# Can also ignore all directories and files in a directory.
+Resources/*
+**/bin/*
+**/obj/*
+**/exports/*
+**/**/obj/*
+**/Content/exports/*
+**/Content/obj/*
+**/Content/bin/*
