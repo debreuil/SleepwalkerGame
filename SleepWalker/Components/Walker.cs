@@ -83,32 +83,28 @@ namespace Sleepwalker.Components
         //        applyJump = true;
         //    //}
         //}
+        private bool isKeyDown;
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
             delay += deltaTime;
             jumpDelay += deltaTime;
 
-            //bool touchingGround = (contactCount > 0)  ? true : false;
-
             // Ground hit
             timeSinceGroundHit += deltaTime;
 
-            //if ( applyJump)
-            //{
-            //    applyJump = false;
-            //    this.body.ApplyImpulse(new Vector2(0, -200), this.body.GetWorldCenter());
-            //}
-            //if (!touchingGround)
-            //{
-            //    this.body.SetLinearVelocity(this.body.GetLinearVelocity() * 0.95F);
-            //}
             this.body.SetLinearVelocity(this.body.GetLinearVelocity() * 0.98F);
 
             // Walking
             PlayerIndex plIndex = SleepwalkerGame.activeController;
             bool isPressed = GamePad.GetState(plIndex).IsButtonDown(Buttons.A);// || GamePad.GetState(plIndex).IsButtonDown(Buttons.B);
-
+#if WINDOWS
+            if (!isPressed && !isKeyDown)
+            {
+                isPressed = Keyboard.GetState().IsKeyDown(Keys.A);
+            }
+            isKeyDown = !Keyboard.GetState().IsKeyUp(Keys.A);
+#endif
             if (isPressed && isReleased)
             {
                 ((BaseScreen)screen).hasPressedA = true;
@@ -128,27 +124,7 @@ namespace Sleepwalker.Components
             }
 
             SetWalkFrame();
-
-            //if (touchingGround)
-            //{
-            //    Console.WriteLine(this.body.GetLinearVelocity().Length());
-            //    this.body.ApplyImpulse(new Vector2(12 * directionWalking, 0), this.body.GetWorldCenter());
-            //}
-
-            //if (touchingGround)// && this.body.GetLinearVelocity().Length() > 20F)
-            //{
-            //    float sign = Math.Sign(20F - this.body.GetLinearVelocity().Length());
-
-                this.body.ApplyLinearImpulse(new Vector2(12 * directionWalking, 0), this.body.GetWorldCenter());
-            //}
-
-            //// Jumping
-            //if (gamePad.IsButtonDown(Buttons.A) && jumpDelay > 0.1F)
-            //{
-            //    jumpDelay = 0;
-
-            //    this.body.ApplyImpulse(new Vector2(0, -80), this.body.GetWorldCenter());
-            //}
+            this.body.ApplyLinearImpulse(new Vector2(12 * directionWalking, 0), this.body.GetWorldCenter());
 
             base.Update(gameTime);
         }
